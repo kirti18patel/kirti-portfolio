@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root
+{
+    --primary : rgba(229,93,139,255);
+    --secondary: #f9dce5;
+    --black : #242D49;
+    --gray : #788097;
+    --blue : #1284c3;
+    --green : #9cc256;
+    --purple: rgb(238 210 255);
+    --shadow: rgba(135,90,122, 0.42);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black); 
+    text-shadow: 2px 3px 5px var(--shadow);   
+}
+
+.button {
+    background: linear-gradient(180deg,#e887b3 26.71%, #dc5888 99.36%);
+    box-shadow: 0px 20px 24px 3px var(--shadow);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+
+  .pic{
+    border-radius: 50%;
+    box-shadow: 0px 20px 26px 8px var(--shadow);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 1rem;
+
+    }
+  }
+
+  
+
+  

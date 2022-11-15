@@ -1,0 +1,29 @@
+.card {
+  width: 14rem;
+  min-height: 16rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  border: 7px solid var(--secondary);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0px 26px 2rem 26px;
+}
+.card span:nth-of-type(2) {
+  color: var(--gray);
+  font-size: 16px;
+}
+.card > img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+}
+
+@media screen and (max-width: 480px){
+  .card{
+    width: auto;
+  }
+}

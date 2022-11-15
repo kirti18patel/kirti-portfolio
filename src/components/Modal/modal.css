@@ -1,0 +1,90 @@
+.modalBackdrop {
+	background: rgba(0, 0, 0, .4);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.modalContainer {
+	background: white;
+	border-radius: 2rem;
+	width: 100%;
+	margin: 50px auto;
+	padding: 30px;
+	width: 960px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTitle {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.project-info{
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+}
+.project-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.5s;
+}
+.project-info:hover .project-img{
+  transform: translateY(-50px) scale(0.4);
+}
+.project-info:hover .project-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  margin: 20px;
+  transform: translateY(-100%);
+}
+.project-img a{
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.project-img a img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project-description{
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(-80px);
+  transition-delay: 0.3s;
+}
+.project-description p{
+  font-size: 1.3rem;
+}
+.modal-close-btn {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 5px 10px;
+  transition: 0.3s;
+}
+.modal-close-btn:hover{
+	background: var(--gray);
+  transform: translateY(-3px);
+}

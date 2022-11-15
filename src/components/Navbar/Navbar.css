@@ -1,0 +1,65 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+
+.scrolled{
+  height: 10vh;
+  width: 100%;
+  padding :0 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 99;
+  box-shadow: var(--boxShadow);
+  
+}
+.scroll-dark{  
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+  transition: 0.3s;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
