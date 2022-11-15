@@ -23,7 +23,6 @@ const Home = () => {
           <span style={{ color: darkMode ? "white" : "" }}><span className="i-h">H</span>i,</span>
           <span>I am <span>K</span>irti,</span>
           <span>
-            {/* status - pr and basic questions while applying*/}
             Full Stack Developer with high level of experience in web designing
             and development, producing the Quality work
           </span>

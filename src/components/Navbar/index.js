@@ -37,7 +37,7 @@ const Navbar = () => {
           <Toggle />
         </div>
         <div className="n-right">
-          <div className="n-list">
+          <div className="n-list m-hidden">
             <ul style={{ listStyleType: "none" }}>
               <li>
                 <Link to="intro" spy={true} smooth={true}>

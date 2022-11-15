@@ -15,11 +15,11 @@ const Work = () => {
   return (
     <div className="works" id="works">
       <div className="w-left">
-        <div className="awesome w-auto">
-          <span style={{ color: darkMode ? "white" : "" }}>
+        <div className="awesome w-auto ">
+          <span className="m-hidden" style={{ color: darkMode ? "white" : "" }}>
             Work
           </span>
-          <span>History</span>
+          <span className="m-hidden">History</span>
           <VerticalLinearStepper />
           <a href={Resume} download="kirti-patel-resume.docx">
             <button className="button s-button">Download CV</button>
@@ -51,7 +51,6 @@ const Work = () => {
             <img src={AT} alt="" />
           </div>
         </motion.div>
-        {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle greenCircle"></div>
       </div>

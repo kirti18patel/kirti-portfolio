@@ -55,11 +55,21 @@ textarea{
     .contact-form{
         padding: 0;
         flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
+        gap: 2rem;
+        height: auto;
+    }
+    .c-right form{
+        height: auto !important;
     }
     .c-right .user{
         width: 16rem;
+    }
+    .w-left{
+        width: 100%;
+    }
+    .awesome > :nth-child(3) {
+        font-size: 12px;
+        width: 80vw;
     }
 
 }   

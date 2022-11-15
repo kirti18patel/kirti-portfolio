@@ -28,6 +28,7 @@
 }
 .slogan{
     width : 100%;
+    font-weight: bold;
     align-items: center;
     font-size: 4rem;
   }
@@ -43,14 +44,24 @@
   }
   .about-description p{
     margin: 10px 0;
+    text-align: justify;
   }
 
 @media screen and (max-width: 480px){
-    .t-wrapper{
-        padding: 0;
-    }
-    .testimonial>img{
-        width: 70px;
-        height: 70px;
-    }
+  .t-wrapper{
+    padding:  0;
+    margin-bottom: 8rem;
   }
+  .t-heading>*{
+      font-size: 1.5rem;
+  }
+  .slogan{
+    font-size: 1.5rem;
+  }
+  .slogan span{
+    font-size: 1.5rem;
+  }
+  .about-description > p{
+    font-size: 0.9rem;
+  }
+}

@@ -25,4 +25,11 @@
   .f-content{
     transform: scale(.5);
   }
+  .footer {
+    margin: -0.5rem -3.5rem;
+    margin-top: 0rem;
+  }
+  .f-content {
+    margin-top: 3rem;
+  }
 }

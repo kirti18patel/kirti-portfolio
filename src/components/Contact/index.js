@@ -76,7 +76,8 @@ const Contact = () => {
             value={formState.Name}
             default={formState.Name}
             required
-            onChange={handleChange}/>
+            onChange={handleChange}
+            style={{background: darkMode?'black': ''}}/>
           <input 
             type="email" 
             name="Email" 
@@ -85,7 +86,8 @@ const Contact = () => {
             value={formState.Email} 
             default={formState.Email}
             required 
-            onChange={handleChange}/>
+            onChange={handleChange}
+            style={{background: darkMode?'black': ''}}/>
           <textarea 
             name="Message" 
             className="user" 
@@ -93,7 +95,8 @@ const Contact = () => {
             value={formState.Message} 
             default={formState.Message}
             required 
-            onChange={handleChange}/>
+            onChange={handleChange}
+            style={{background: darkMode?'black': ''}}/>
           <input 
             type="submit" 
             value="Send" 
