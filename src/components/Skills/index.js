@@ -19,7 +19,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="skills">
       <div className="awesome width-half">
         <div className=""></div>
         <span style={{ color: darkMode ? "white" : "black" }} className="span-skills"><span className="span-S">S</span>kills</span>

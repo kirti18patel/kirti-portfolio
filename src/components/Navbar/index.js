@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="n-list m-hidden">
             <ul style={{ listStyleType: "none" }}>
               <li>
-                <Link to="intro" spy={true} smooth={true}>
+                <Link to="home" spy={true} smooth={true}>
                   Home
                 </Link>
               </li>
@@ -55,15 +55,15 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="services" spy={true} smooth={true}>
+                <Link to="skills" spy={true} smooth={true}>
                   Skills
                 </Link>
               </li>
-              {/* <li>
-                <Link to="portfolio" spy={true} smooth={true}>
+              <li>
+                <Link to="project" spy={true} smooth={true}>
                   Projects
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <Link to="contact" spy={true} smooth={true}>

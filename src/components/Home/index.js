@@ -17,7 +17,7 @@ const Home = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="Intro" id="intro">
+    <div className="Intro" id="home">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}><span className="i-h">H</span>i,</span>
