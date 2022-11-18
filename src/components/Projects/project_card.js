@@ -41,12 +41,14 @@ export default function ProjectCard({project}) {
         title={project.name}
         subheader={project.teamsize}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={project.image}
-        alt={project.name}
-      />
+      <Link href={project.github} underline="none" color="inherit">
+        <CardMedia
+          component="img"
+          height="194"
+          image={project.image}
+          alt={project.name}
+        />
+      </Link>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {project.technologies}
