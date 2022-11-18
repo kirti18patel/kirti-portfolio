@@ -9,16 +9,16 @@ import { themeContext } from "../../Context";
 
 const Projects = () => {  
   const [projects] = useState([
-    {
-      name: 'Book Store',
-      image: project3,
-      teamsize: "Individual project",
-      github:"https://github.com/kirti18patel/book-store",
-      deployed: "https://kirti-book-search-engine.herokuapp.com/",
-      technologies: "HTML, CSS, Javascript, ReactJs, Node.js, Express.js, MongoDB, GraphQL, Apollo Server",
-      description:
-        'Book Search Engine web application allows avid readers to search books available in order to keep track of their favorite books and make a list of books that need to be purchased. The reader can also delete the book from the saved book once purchased or read.'
-    },
+    // {
+    //   name: 'Book Store',
+    //   image: project3,
+    //   teamsize: "Individual project",
+    //   github:"https://github.com/kirti18patel/book-store",
+    //   deployed: "https://kirti-book-search-engine.herokuapp.com/",
+    //   technologies: "HTML, CSS, Javascript, ReactJs, Node.js, Express.js, MongoDB, GraphQL, Apollo Server",
+    //   description:
+    //     'Book Search Engine web application allows avid readers to search books available in order to keep track of their favorite books and make a list of books that need to be purchased. The reader can also delete the book from the saved book once purchased or read.'
+    // },
     {
       name: 'Crazy Tetromino',
       image: project1,
@@ -39,16 +39,16 @@ const Projects = () => {
       description:
         'A product waste managing web application which allows business owners to manage their kitchen waste in order to lower their overhead costs and also decrease their carbon footprint.'
     },
-    {
-      name: 'Tech Blog',
-      image: project4,
-      teamsize: "Individual project",
-      github:"https://github.com/kirti18patel/tech-blog",
-      deployed: "https://salty-castle-76662.herokuapp.com/",
-      technologies: "HTML, CSS, Javascript, Node.js, Express.js, Handlebars, MySQL, Sequelize ORM",
-      description:
-        'A tech blog web application which allows developers to publish their blog posts and comment on other developers’ posts as well.'
-    }
+    // {
+    //   name: 'Tech Blog',
+    //   image: project4,
+    //   teamsize: "Individual project",
+    //   github:"https://github.com/kirti18patel/tech-blog",
+    //   deployed: "https://salty-castle-76662.herokuapp.com/",
+    //   technologies: "HTML, CSS, Javascript, Node.js, Express.js, Handlebars, MySQL, Sequelize ORM",
+    //   description:
+    //     'A tech blog web application which allows developers to publish their blog posts and comment on other developers’ posts as well.'
+    // }
   ]);
 
   const theme = useContext(themeContext);

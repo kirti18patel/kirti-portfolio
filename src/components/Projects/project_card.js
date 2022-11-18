@@ -35,13 +35,13 @@ export default function ProjectCard({project}) {
       setExpanded(!expanded);
     };
   return (
-    <Card sx={{ maxWidth: 345, margin: "20px" , fontSize: "10px" }}>
-      <CardHeader
-        sx={{fontSize: "12px"}}
-        title={project.name}
-        subheader={project.teamsize}
-      />
-      <Link href={project.github} underline="none" color="inherit">
+    <Card sx={{ maxWidth: 345, margin: "20px" , fontSize: "10px" }}>      
+      <Link href={project.deployed} underline="none" color="inherit">
+        <CardHeader
+          sx={{fontSize: "12px"}}
+          title={project.name}
+          subheader={project.teamsize}
+        />
         <CardMedia
           component="img"
           height="194"
