@@ -17,7 +17,7 @@ const steps = [
   {
     label: 'Full Stack Developer',
     company: "Maket (Techstars '21) · Permanent Full-time",
-    duration: "Nov 2021 - Present · Montreal, Quebec, Canada",
+    duration: "Nov 2021 - Nov 2022 · Montreal, Quebec, Canada",
     },
   {
     label: 'Junior Web Developer',
