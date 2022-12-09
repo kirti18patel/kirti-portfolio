@@ -4,10 +4,12 @@ import './FloatingDiv.css'
 const FloatinDiv = ({img, text1}) => {
   return (
     <div className="floatingDiv">
-      <img src={img} alt="" />
       <span>
+        Montreal,
+        <br />
         {text1}
       </span>
+      <img src={img} alt="" />
     </div>
   );
 };
