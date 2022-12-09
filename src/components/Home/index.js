@@ -50,7 +50,7 @@ const Home = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Canada" />
         </motion.div>
 
         <div className="o-blur" style={{ background: "var(--purple)" }}></div>
