@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Home.css";
 import pic from "../../img/pic.png"
-import crown from "../../img/crown.png";
+import loc from "../../img/loc.png";
 import FloatinDiv from "../FloatingDiv";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -49,7 +49,7 @@ const Home = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={loc} text1="Canada" />
         </motion.div>
 
         <div className="o-blur" style={{ background: "var(--purple)" }}></div>

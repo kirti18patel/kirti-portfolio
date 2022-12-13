@@ -62,7 +62,7 @@ const Skills = () => {
           <Card
             icon={Backend}
             heading={"Backend"}
-            detail={"JavaScript, Express.js, Redux, Node.js, RESTful API's, JWT, JSON, NPM"}
+            detail={"JavaScript, Express.js, Redux, Node.js, RESTful API's, GraphQL, JWT, JSON, NPM"}
           />
         </motion.div>
         <motion.div

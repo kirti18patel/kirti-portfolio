@@ -104,7 +104,7 @@
   font-family: 'Sacramento', cursive;
   transform: translateX(-5%);
 }
-.content::after{
+.i-left::after{
   content: "</h1>";
 }
 
