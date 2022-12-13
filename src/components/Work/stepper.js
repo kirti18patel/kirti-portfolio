@@ -12,27 +12,29 @@ import Redo from "@iconscout/react-unicons/icons/uil-redo";
 import Check from "@iconscout/react-unicons/icons/uil-check";
 import Up from "@iconscout/react-unicons/icons/uil-angle-double-up";
 import Down from "@iconscout/react-unicons/icons/uil-angle-double-down";
-
-const steps = [
-  {
-    label: 'Full Stack Developer',
-    company: "Maket (Techstars '21) · Permanent Full-time",
-    duration: "Nov 2021 - Nov 2022 · Montreal, Quebec, Canada",
-    },
-  {
-    label: 'Junior Web Developer',
-    company: "Alliance Tech · Permanent Full-time",
-    duration: "Aug 2019 - Aug 2020 · India",
-    },
-  {
-    label: 'Web Designer',
-    company: "Onetech Solutions · Internship",
-    duration: "Oct 2018 - Jan 2019 · India",
-    },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function VerticalLinearStepper() {
   const [activeStep, setActiveStep] = useState(0);
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      label: t('work.role.0'),
+      company: `Maket (Techstars '21) · ${t('work.type.fullTime')}`,
+      duration: "Nov 2021 - Nov 2022 · Montreal, Quebec, Canada",
+      },
+    {
+      label: t('work.role.1'),
+      company: `Alliance Tech · ${t('work.type.fullTime')}`,
+      duration: `${t('work.duration.1')} 2019 - ${t('work.duration.1')} 2020 · India`,
+      },
+    {
+      label: t('work.role.2'),
+      company: `Onetech Solutions · ${t('work.type.internship')}`,
+      duration: `Oct 2018 - ${t('work.duration.0')} 2019 · India`,
+      },
+    ];
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

@@ -46,7 +46,7 @@
   margin-top: 10px;
 }
 .i-button {
-  width: 6rem;
+  min-width: 6rem;
 }
 .i-icons {
   margin-top: 3rem;

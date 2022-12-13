@@ -8,6 +8,7 @@ import Tools from "../../img/tools.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from '../../img/resume-kirti-developer.docx';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
   const theme = useContext(themeContext);
@@ -17,23 +18,26 @@ const Skills = () => {
     duration: 1,
     type: "spring",
   };
+  const { t } = useTranslation();
 
   return (
     <div className="services" id="skills">
       <div className="awesome width-half">
         <div className=""></div>
-        <span style={{ color: darkMode ? "white" : "black" }} className="span-skills"><span className="span-S">S</span>kills</span>
+        <span style={{ color: darkMode ? "white" : "black" }} className="span-skills"><span className="span-S">{t('skills.title.0')}</span>{t('skills.title.1')}</span>
         <div className="skills flex-space-between">
           <div className="skills-description">
-            <p>I started my professional journey in web development with startups and collaborated with talented people to create web products with creative and smart thinking. 
+            <p> 
+              {t('skills.description.0')}
               <br></br><br></br>
-              I can efficiently work on the front-end and on the back-end both along with maintaining databases using reliable web technologies. Experienced in deploying web products on Vercel, Heroku and Netlify. In the rear, I possess Full-stack development skills and experiences.
-              <br></br><br></br>I have experience of working in agile development and value customer needs. Visit my <a href="https://www.linkedin.com/in/kirtipatel18/" className="link-skills">LinkedIn</a> profile for more details or just <a href="mailto:kirti18patel@yahoo.com" className="link-skills">contact</a> me.
+              {t('skills.description.1')}
+              <br></br><br></br>
+              {t('skills.description.2')} <a href="https://www.linkedin.com/in/kirtipatel18/" className="link-skills">LinkedIn</a> {t('skills.description.3')} <a href="mailto:kirti18patel@yahoo.com" className="link-skills">contact</a> {t('skills.description.4')}.
             </p>
           </div>
         </div>
         <a href={Resume} download="kirti-patel-resume.docx">
-          <button className="button s-button">Download CV</button>
+          <button className="button s-button">{t('download')} CV</button>
         </a>
         <div className="o-blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
@@ -47,7 +51,7 @@ const Skills = () => {
           <Card
             icon={Frontend}
             heading={"Frontend"}
-            detail={"JavaScript, HTML5, CSS3, SCSS, React.js, Next.js, Material UI, Tailwind, Bootstrap, Figma"}
+            detail={"HTML, CSS, React.js, Next.js, Material UI, Tailwind, DaisyUI, Styled-component, Bootstrap"}
           />
         </motion.div>
         <motion.div
@@ -58,7 +62,7 @@ const Skills = () => {
           <Card
             icon={Backend}
             heading={"Backend"}
-            detail={"JavaScript, HTML5, CSS3, SCSS, React.js, Next.js, Material UI, Tailwind,  jQuery, Bootstrap"}
+            detail={"JavaScript, Express.js, Redux, Node.js, RESTful API's, JWT, JSON, NPM"}
           />
         </motion.div>
         <motion.div

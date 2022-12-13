@@ -43,7 +43,7 @@
 }
 .n-list > ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-right: 4rem;
 }
 
@@ -51,6 +51,10 @@
   transition: 0.3s;
   color: var(--primary);
   cursor: pointer;
+}
+
+.n-list > ul > li{
+  white-space: nowrap;
 }
 
 .n-button {

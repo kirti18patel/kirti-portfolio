@@ -6,8 +6,10 @@ import project3 from "../../img/assets/3.png";
 import project4 from "../../img/assets/4.png";
 import ProjectCard from './project_card.js'
 import { themeContext } from "../../Context";
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {  
+  const { t } = useTranslation();
   const [projects] = useState([
     // {
     //   name: 'Book Store',
@@ -22,7 +24,7 @@ const Projects = () => {
     {
       name: 'Crazy Tetromino',
       image: project1,
-      teamsize: "Team project",
+      teamsize: `${t('project.team')}`,
       github:"https://github.com/kirti18patel/crazy-tetris",
       deployed: "https://crazy-tetrominos.herokuapp.com/",
       technologies: "HTML, CSS, Javascript, ReactJs, Node.js, Redux, GraphQL, MongoDB, JWT",
@@ -32,7 +34,7 @@ const Projects = () => {
     {
       name: 'Waste Management',
       image: project2,
-      teamsize: "Team project",
+      teamsize: `${t('project.team')}`,
       github:"https://github.com/Group05-Project02/waste-management",
       deployed: "https://waste-management-project2.herokuapp.com/",
       technologies: "HTML, CSS, Javascript, Node.js, Express.js, Handlebars, MySQL, Sequelize ORM",
@@ -56,7 +58,7 @@ const Projects = () => {
   return (
     <div className="portfolio" id="project">
       <div className=""></div>
-      <span style={{ color: darkMode ? "white" : "black" }} className="span-skills"><span className="span-S">P</span>rojects</span>
+      <span style={{ color: darkMode ? "white" : "black" }} className="span-skills"><span className="span-S">{t('project.title.0')}</span>{t('project.title.1')}</span>
       <div className="project-card">
         {projects.map((project, i) => (
           <ProjectCard project={project} key={i}></ProjectCard>

@@ -17,7 +17,7 @@ const Modal = ({ currentProject, onClose }) => {
             <div className="project-info flex-center-column">
                 <div className="project-img flex-center">
                     <a href={deployed} className="flex-center decoration-none-white" target="_blank" rel="noreferrer">
-                        <img src={image} alt="current category" />
+                        <img src={image} alt="current category" loading="lazy"/>
                     </a>
                 </div>
                 <div className="project-description text-center">

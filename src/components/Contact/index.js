@@ -3,12 +3,15 @@ import "./Contact.css";
 import { themeContext } from "../../Context";
 import Snackbar from '@mui/material/Snackbar';
 import { Alert } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const [message, setMessage] = useState("")
   const [formState, setFormState] = useState({ Name: '', Email: '', Message: '' });
+
+  const { t } = useTranslation();
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -58,9 +61,9 @@ const Contact = () => {
     <div className="contact-form" id="contact">
       <div className="w-left">
         <div className="awesome">
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact me</span>
-          <span>I am interested in web development opportunities. If you have any question or want to discuss more about, don't hesitate to reach me.</span>
+          <span style={{color: darkMode?'white': ''}}>{t('contact.title.0')}</span>
+          <span>{t('contact.title.1')}</span>
+          <span>{t('contact.description')}.</span>
           <div
             className="o-blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -72,7 +75,7 @@ const Contact = () => {
           <input
             name="Name" 
             className="user"  
-            placeholder="Name" 
+            placeholder={t('contact.form.name')} 
             value={formState.Name}
             default={formState.Name}
             required
@@ -82,7 +85,7 @@ const Contact = () => {
             type="email" 
             name="Email" 
             className="user" 
-            placeholder="Email" 
+            placeholder={t('contact.form.email')}
             value={formState.Email} 
             default={formState.Email}
             required 
@@ -99,7 +102,7 @@ const Contact = () => {
             style={{background: darkMode?'black': ''}}/>
           <input 
             type="submit" 
-            value="Send" 
+            value={t('contact.form.send')}
             className="button"/>
           <div
             className="o-blur c-blur1"

@@ -9,26 +9,25 @@ import { Link } from "react-scroll";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import At from "@iconscout/react-unicons/icons/uil-at";
 import Github from "@iconscout/react-unicons/icons/uil-github";
+import { useTranslation } from 'react-i18next';
 
 
 const Home = () => {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const { t } = useTranslation();
 
   return (
     <div className="Intro" id="home">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}><span className="i-h">H</span>i,</span>
-          <span>I am <span>K</span>irti,</span>
-          <span>
-            Full Stack Developer with high level of experience in web designing
-            and development, producing the Quality work
-          </span>
+          <span style={{ color: darkMode ? "white" : "" }}><span className="i-h">{t('home.greeting.0')}</span>{t('home.greeting.1')},</span>
+          <span>{t('home.name.0')}<span>{t('home.name.1')}</span>{t('home.name.2')},</span>
+          <span>{t('home.description')}</span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button i-button">{t('button.hire')}</button>
         </Link>
         <div className="f-icons">
           <a href="https://www.linkedin.com/in/kirtipatel18/" target="_blank" rel="noreferrer"><Linkedin color="var(--secondary)" size={"2rem"} /></a>
@@ -42,7 +41,7 @@ const Home = () => {
           whileInView={{ left: "4%" }}
           transition={transition}
         >
-          <img src={pic} alt="" className="pic"/>
+          <img src={pic} alt="" className="pic" loading="lazy"/>
         </motion.div>
         <motion.div
           initial={{ top: "70%", left: "84%" }}
