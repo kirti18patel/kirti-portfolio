@@ -3,6 +3,7 @@ import "./Work.css";
 import AT from "../../img/at.png";
 import IOS from "../../img/ios.png";
 import Maket from "../../img/maket.png";
+import nthCo from "../../img/9thco.png";
 import desk from "../../img/desk.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -40,6 +41,9 @@ const Work = () => {
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
+          <div className="w-secCircle">
+            <img src={nthCo} alt="" loading="lazy" />
+          </div>
           <div className="w-secCircle">
             <img src={Maket} alt="" loading="lazy"/>
           </div>

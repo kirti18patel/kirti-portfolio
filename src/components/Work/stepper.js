@@ -21,16 +21,21 @@ export default function VerticalLinearStepper() {
   const steps = [
     {
       label: t('work.role.0'),
+      company: `9thCO · ${t('work.type.fullTime')}`,
+      duration: "Jan 2023 - Present · (Remote) Montreal, Quebec, Canada",
+    }, 
+    {
+      label: t('work.role.1'),
       company: `Maket (Techstars '21) · ${t('work.type.fullTime')}`,
       duration: "Nov 2021 - Nov 2022 · Montreal, Quebec, Canada",
       },
     {
-      label: t('work.role.1'),
+      label: t('work.role.2'),
       company: `Alliance Tech · ${t('work.type.fullTime')}`,
       duration: `${t('work.duration.1')} 2019 - ${t('work.duration.1')} 2020 · India`,
       },
     {
-      label: t('work.role.2'),
+      label: t('work.role.3'),
       company: `Onetech Solutions · ${t('work.type.internship')}`,
       duration: `Oct 2018 - ${t('work.duration.0')} 2019 · India`,
       },

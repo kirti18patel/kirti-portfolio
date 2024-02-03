@@ -56,16 +56,20 @@
   left: 6rem;
 }
 .w-mainCircle > :nth-child(2) {
-  left: -1rem;
-  top: 10rem;
+  left: -3rem;
+  top: 6rem;
 }
 .w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 15rem;
+}
+.w-mainCircle > :nth-child(4) {
   left: 5rem;
   top: 5rem;
 }
-.w-mainCircle > :nth-child(4) {
-  left: 13rem;
-  top: 10rem;
+.w-mainCircle> :nth-child(5) {
+  left: 15rem;
+  top: 6rem;
 }
 .w-secCircle {
   width: 6rem;

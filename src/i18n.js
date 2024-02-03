@@ -46,7 +46,7 @@ i18n
              fullTime: 'Permanent Full-time',
              internship: 'Internship',
             },
-            role: ["Full Stack Developer", "Junior Web Developer", "Web Designer"],
+            role: ["Full Stack Web Developer", "Full Stack Developer", "Junior Web Developer", "Web Designer"],
             duration: ["Jan", "Aug"]
           },
           experience: {
@@ -118,7 +118,7 @@ i18n
             fullTime: 'Permanent à temps plein',
             internship: 'Stage',
            },
-           role: ["Développeuse Full Stack", "Développeuse Web Junior", "Designer Web"],
+           role: ["Développeuse Full Stack de Web", "Développeuse Full Stack", "Développeuse Web Junior", "Designer Web"],
            duration: ["Janv", "Août"]
          },
          experience: {
